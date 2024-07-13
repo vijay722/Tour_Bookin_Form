@@ -1,0 +1,61 @@
+*{
+    padding: 0px; margin:0px; box-sizing: border-box;
+}
+/* overall container inside the tour booking form flow inside the container */
+ .over_all{
+    width: 100%; height: 100vh; position: relative; box-sizing: border-box; padding: 20px;
+/* posioned a  image in background width and height was viewport  */
+ }
+ img{
+    width: 100%; height: 100vh; position: absolute;
+ }
+ .heading{
+    border-bottom: 2px solid white; color: white;
+ }
+.forms_conatainer{
+    padding-top:10px;
+}
+.input_field1 input{
+    width: 300px; height: 25px;
+}
+.input_field1 select{
+    width: 300px; height: 25px;
+}
+/* for buttton background color and radius for borders properties writed */
+button{
+    width: 100px; height: 30px; margin-top: 5px;
+    background-color: orangered; border-radius: 3px; border: none;
+}
+input , select{
+    margin-top: 10px;
+}
+/* checkbox apperance will none and border solid box it will visible inside the box invisible */
+input[type="checkbox"]{
+    appearance: none; width: 15px; height: 15px; border: 2px solid black;
+    background-color: transparent; position: relative; cursor: pointer; border-radius: 2px;
+}
+/* checked inside the invisible box content ,transform rotate properties and border usind width and height tick content will appear */
+input[type="checkbox"]:checked::before{
+    content:" "; width: 6px; height: 2px; top:3px; left:3px;
+    border-left: 2px solid black; border-bottom: 2px solid black; transform:rotate(-45deg); position: absolute;
+}
+/* same radio button checkbox properties goes here appearance will be none and some extra  properties added crusor pointer and invisible box etc */
+input[type="radio"]{
+    appearance: none; width: 15px; height: 15px; border: 2px solid black;
+    background-color: transparent; position: relative; cursor: pointer; border-radius: 8px;
+}
+.radio_size {
+margin-left:10px;
+}
+/* major change in radio button only border radius and position circle inside the invisible box using top left and background color appear click  */
+input[type="radio"]:checked::before{
+    content:" "; width: 3px; height: 3px; top: 2.5px; left: 2.5px; border-radius: 50%;
+    background-color: black; border: 2px solid black; position:absolute;
+}
+.tile_color,h4{
+    color: red; font:bolder;
+}
+/* separately in body content all the font size increased */
+label{
+    font:x-large;
+}

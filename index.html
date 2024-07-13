@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <!-- header section link tag has using style.css linked -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Book Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>  
+        <div>
+        <img src="./travelform-background.png">
+        </div>
+        <div class="over_all">
+         <div class="heading">
+           <h1>Tour booking form</h1>
+           <h4>Note: *Mandotary for Fields</h4>
+         </div>
+         <div class="forms_conatainer">
+                <form action="">
+                        <div class="input_field1">
+                <!-- using a label and input tag input field has been created -->
+                        <label for="name">Full Name <span class="tile_color">*</span>:</label><br>
+                        <input type="text" id="name" name="name">
+                    <br> 
+                <!-- using a email attribute and input tag input field has been created -->
+                        <label for="email">Email Address <span class="tile_color">*</span>:</label><br>
+                        <input type="email" id="email" name="email">
+                    <br>
+                <!-- using a select tag and option has been created -->
+                        <label for="select">Select Tour package <span class="tile_color">*</span>:
+                        </label><br>
+                        <select name="packages">
+                            <option value="" disabled selected class="select-placeholder">Please select an option</option>
+                            <option value="Month1">Month1</option>
+                            <option value="Month2">Month2</option>
+                            <option value="Month3">Month3</option>
+                        </select>
+                    <br>
+                <!-- using a number attribute and input tag then input field is created -->
+                        <label for="till">Number of persons <span class="tile_color">*</span>:</label><br>
+                        <input type="number" id="till" name="till">
+                    <br>
+                        <label for="date">Date<span class="tile_color">*</span>:</label><br>
+                        <input type="date" required>
+                    </div>
+                    <div class="input_field2"> 
+                    <!-- using a label and input tag then checkbox has been created -->
+                        <label for="checkbox">What would you want to avail? <span class="tile_color">*</span></label><br>
+                        <input type="checkbox" value="required"><label> Boarding</label> <br>
+                        <input type="checkbox" value="required"><label> Food </label> <br>
+                        <input type="checkbox" value="required"><label> Seight Seeing </label>
+                     </div>
+                      <div>
+                     <!-- using a label and input tag then radio button has been created -->
+                         <label for="radio">Terms and condisions<span class="tile_color">*</span></label><br>
+                         <input type="radio" value="required"><label class="radio_size">I Agree</label>
+                    <br></div>
+                    <!-- Simple button created with color and size using css properties -->
+                          <button>Book Now</button>
+                    </form>
+         </div>
+        </div>      
+</body>
+</html>
